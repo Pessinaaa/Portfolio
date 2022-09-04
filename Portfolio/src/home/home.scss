@@ -1,0 +1,45 @@
+@import '../assets/global.scss';
+@import '../assets/variables.scss';
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-color: $backgroundColorDark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    .profile {
+        width: calc(50vw);
+        height: calc(50vw);
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        overflow: hidden;
+    
+        img {
+            width: calc(50vw);
+            height: calc(40vh);
+            position: relative;
+            top: calc(-3.5vh);
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+    
+    h1 {
+        font-size: 2rem;
+        color: $textColorDark;
+    }
+
+    .social {
+        display: flex;
+        width: 30vw;
+        justify-content: space-between;
+
+        a {
+            font-size: 2.3rem;
+            color: $primaryColorDark;
+        }
+    }
+}
