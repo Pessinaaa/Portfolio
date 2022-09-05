@@ -11,6 +11,25 @@
     justify-content: center;
     gap: 3rem;
 
+    .theme {
+        position: fixed;
+        top: 3vh;
+        right: 3vh;
+        height: 1.2rem;
+        width: 35px;
+        border-radius: 0.6rem;
+        padding: 0 3px;
+        display: flex;
+        justify-content: right;
+        background-color: $secondaryColorDark;
+
+        div {
+            color: #213547;
+            display: flex;
+            align-items: center;
+        }
+    }
+
     .profile {
         width: calc(50vw);
         height: calc(50vw);
@@ -29,6 +48,7 @@
     
     h1 {
         font-size: 2rem;
+        font-weight: 500;
         color: $textColorDark;
     }
 
@@ -41,5 +61,16 @@
             font-size: 2.3rem;
             color: $primaryColorDark;
         }
+    }
+
+    p {
+        color: $textColorDark;
+        font-weight: 300;
+    }
+
+    .down {
+        position: fixed;
+        bottom: 2vh;
+        color: $primaryColorDark;
     }
 }
