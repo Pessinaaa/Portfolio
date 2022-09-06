@@ -2,6 +2,7 @@
 @import '../assets/variables.scss';
 
 .home {
+    position: relative;
     height: 100vh;
     width: 100vw;
     background-color: $backgroundColorDark;
@@ -10,9 +11,10 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    color: $textColorDark;
 
     .theme {
-        position: fixed;
+        position: absolute;
         top: 3vh;
         right: 3vh;
         height: 1.2rem;
@@ -49,7 +51,6 @@
     h1 {
         font-size: 2rem;
         font-weight: 500;
-        color: $textColorDark;
     }
 
     .social {
@@ -64,12 +65,11 @@
     }
 
     p {
-        color: $textColorDark;
         font-weight: 300;
     }
 
     .down {
-        position: fixed;
+        position: absolute;
         bottom: 2vh;
         color: $primaryColorDark;
     }
