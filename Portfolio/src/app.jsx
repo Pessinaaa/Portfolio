@@ -3,6 +3,7 @@ import Home from './home/home.jsx'
 import About from './about/about.jsx'
 import Skills from './skills/skills.jsx'
 import Services from './services/services.jsx'
+import Portfolio from './portfolio/portfolio.jsx'
 import './assets/app.css'
 
 export default function App(){
@@ -12,6 +13,7 @@ export default function App(){
             <About />
             <Skills />
             <Services />
+            <Portfolio />
         </div>
     )
 }
