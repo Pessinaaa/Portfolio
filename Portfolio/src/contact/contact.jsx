@@ -12,21 +12,29 @@ export default function Contato(){
                 <a href="https://wa.me/5511989697450" target="_blank"><IoLogoWhatsapp /></a>
             </div>
             <form>
-                <label htmlFor="nome">Nome</label>
-                <input type="text"/>
-                <label htmlFor="email">E-mail</label>
-                <input type="email"/>
-                <label htmlFor="assunto">Assunto</label>
-                <select name="assunto" id="assunto">
-                    <option value="default" selected disabled hidden>Escolha um assunto</option>
-                    <option value="contato">Contato</option>
-                    <option value="critica">Crítica</option>
-                    <option value="orcamento">Orçamento</option>
-                    <option value="sugestao">Sugestão</option>
-                </select>
-                <label htmlFor="mensagem">Mensagem</label>
-                <input type="text" placeholder='Escreva o conteúdo do email'/>
-                <input type="submit" />
+                <div>
+                    <label htmlFor="nome">Nome</label>
+                    <input type="text" required/>
+                </div>
+                <div>
+                    <label htmlFor="email">E-mail</label>
+                    <input type="email" required/>
+                </div>
+                <div>
+                    <label htmlFor="assunto">Assunto</label>
+                    <select name="assunto" id="assunto" required>
+                        <option value="default" selected disabled hidden>Escolha um assunto</option>
+                        <option value="contato">Contato</option>
+                        <option value="critica">Crítica</option>
+                        <option value="orcamento">Orçamento</option>
+                        <option value="sugestao">Sugestão</option>
+                    </select>
+                </div>
+                <div>
+                    <label htmlFor="mensagem">Mensagem</label>
+                    <textarea type="text" placeholder='Escreva o conteúdo do email' cols='0' rows='5' required/>
+                </div>
+                <input type="submit" className='submit-form'/>
             </form>
         </div>
     )
