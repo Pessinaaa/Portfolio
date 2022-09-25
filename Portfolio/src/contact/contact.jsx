@@ -26,6 +26,7 @@ export default function Contato(){
                 </select>
                 <label htmlFor="mensagem">Mensagem</label>
                 <input type="text" placeholder='Escreva o conteúdo do email'/>
+                <input type="submit" />
             </form>
         </div>
     )
