@@ -5,6 +5,7 @@ import Skills from './skills/skills.jsx'
 import Services from './services/services.jsx'
 import Portfolio from './portfolio/portfolio.jsx'
 import Contato from './contact/contact.jsx'
+import Footer from './footer/footer.jsx'
 import './assets/app.css'
 
 export default function App(){
@@ -16,6 +17,7 @@ export default function App(){
             <Services />
             <Portfolio />
             <Contato />
+            <Footer />
         </div>
     )
 }
