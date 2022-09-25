@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  scroll-snap-align: start;
+}
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+  background-color: #2B4865;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  align-items: center;
+  place-content: center;
+  color: #FFF;
+}
+.contact h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.contact .contact-buttons {
+  display: flex;
+  gap: 2rem;
+}
+.contact .contact-buttons a {
+  color: #256D85;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=contact.css.map */

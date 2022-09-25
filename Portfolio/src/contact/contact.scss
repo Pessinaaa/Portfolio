@@ -1,0 +1,29 @@
+@import "../assets/global.scss", "../assets/variables.scss";
+
+.contact {
+    height: 100vh;
+    width: 100vw;
+    background-color: $backgroundColorDark;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    color: $textColorDark;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .contact-buttons {
+        display: flex;
+        gap: 2rem;
+        
+        a {
+            color: $primaryColorDark;
+            font-size: 1.3rem;
+        }
+    }
+}
