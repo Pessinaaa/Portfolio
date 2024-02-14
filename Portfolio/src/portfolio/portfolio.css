@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  scroll-snap-align: start;
+}
+
+.portfolio {
+  height: 100vh;
+  width: 100vw;
+  background-color: #2B4865;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  place-content: center;
+  color: #FFF;
+}
+.portfolio h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.portfolio .swiper {
+  width: 80vw;
+  height: 60vh;
+}
+.portfolio .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=portfolio.css.map */

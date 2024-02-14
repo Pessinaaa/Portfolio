@@ -1,0 +1,76 @@
+@import '../assets/global.scss';
+@import '../assets/variables.scss';
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: $backgroundColorDark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    color: $textColorDark;
+
+    .theme {
+        position: absolute;
+        top: 3vh;
+        right: 3vh;
+        height: 1.2rem;
+        width: 35px;
+        border-radius: 0.6rem;
+        padding: 0 3px;
+        display: flex;
+        justify-content: right;
+        background-color: $secondaryColorDark;
+
+        div {
+            color: #213547;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .profile {
+        width: calc(50vw);
+        height: calc(50vw);
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        overflow: hidden;
+    
+        img {
+            width: calc(50vw);
+            height: calc(40vh);
+            position: relative;
+            top: calc(-3.5vh);
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+    
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .social {
+        display: flex;
+        width: 30vw;
+        justify-content: space-between;
+
+        a {
+            font-size: 2.3rem;
+            color: $primaryColorDark;
+        }
+    }
+
+    p {
+        font-weight: 300;
+    }
+
+    .down {
+        position: absolute;
+        bottom: 2vh;
+        color: $primaryColorDark;
+    }
+}

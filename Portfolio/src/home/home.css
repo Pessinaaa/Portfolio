@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  scroll-snap-align: start;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2B4865;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  color: #FFF;
+}
+.home .theme {
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+  height: 1.2rem;
+  width: 35px;
+  border-radius: 0.6rem;
+  padding: 0 3px;
+  display: flex;
+  justify-content: right;
+  background-color: #8FE3CF;
+}
+.home .theme div {
+  color: #213547;
+  display: flex;
+  align-items: center;
+}
+.home .profile {
+  width: 50vw;
+  height: 50vw;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  overflow: hidden;
+}
+.home .profile img {
+  width: 50vw;
+  height: 40vh;
+  position: relative;
+  top: -3.5vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.home h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.home .social {
+  display: flex;
+  width: 30vw;
+  justify-content: space-between;
+}
+.home .social a {
+  font-size: 2.3rem;
+  color: #256D85;
+}
+.home p {
+  font-weight: 300;
+}
+.home .down {
+  position: absolute;
+  bottom: 2vh;
+  color: #256D85;
+}/*# sourceMappingURL=home.css.map */
