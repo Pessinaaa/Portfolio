@@ -1,8 +1,0 @@
-@import './global.scss';
-
-.app {
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    scroll-snap-type: y proximity;
-    height: 100vh;
-}
