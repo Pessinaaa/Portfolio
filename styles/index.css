@@ -3,10 +3,6 @@
     --secondary-color: #93BFCF;
     --tertiary-color: #BDCDD6;
     --background-color: #EEE9DA;
-    --primary-color-dark: ;
-    --secondary-color-dark: ;
-    --tertiary-color-dark: ;
-    --background-color-dark: ;
 }
 *{
     padding: 0;
@@ -66,14 +62,16 @@ main{
 }
 section{
     padding-top: 15vh;
-    min-height: 90vh;
+    min-height: 85vh;
     overflow-x: hidden;
 }
 h1, h2{
     font-size: 1.25rem;
+    text-align: center;
+    text-indent: 0 !important;
 }
 #about{
-    padding: 0;
+    padding: 15vh 0 0 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -81,6 +79,9 @@ h1, h2{
     text-align: justify;
     hyphens: auto;
     text-indent: 2rem;
+}
+#about p{
+    padding: 0 1.5rem;
 }
 .carrossel{
     z-index: 0 !important;
