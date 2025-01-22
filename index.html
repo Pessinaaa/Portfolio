@@ -358,6 +358,7 @@
           elements.forEach(element => {
             element.textContent = element.getAttribute(`data-${currentLang}`);
           });
+          handleNavClick();
         }
 
         function toggleMenu() {
