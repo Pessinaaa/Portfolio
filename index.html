@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pedro pessina, pedro berveglieri, pedro berveglieri pessina, berveglieri pessina, pessina, berveglieri">
+    <meta name="author" content="Pedro Berveglieri Pessina">
+    <meta name="description" content="Portfólio profissional do desenvolvedor Pedro Pessina">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./media/Icon.png" type="image/x-icon">   
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Pedro Pessina | Portfólio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <a href="#" class="logo" data-pt="Portfólio" data-en="Portfolio">Portfólio</a>
+            <nav class="nav-desktop">
+              <a href="#about" data-pt="Sobre mim" data-en="About">Sobre mim</a>
+              <a href="#skills" data-pt="Habilidades" data-en="Skills">Habilidades</a>
+              <a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a>
+              <a href="#contact" data-pt="Contato" data-en="Contact">Contato</a>
+              <div class="social-links">
+                <a href="https://github.com/Pessinaaa" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pedro-pessina/" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="linkedin"></i>
+                </a>
+              </div>
+              <button class="lang-toggle" onclick="toggleLanguage()">
+                <span data-en="PT" data-pt="EN">EN</span>
+              </button>
+            </nav>
+            <button class="menu-button" onclick="toggleMenu()">
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
+          <nav class="nav-mobile" id="mobileMenu">
+            <a href="#about" onclick="handleNavClick()" data-pt="Sobre mim" data-en="About">Sobre mim</a>
+              <a href="#skills" onclick="handleNavClick()" data-pt="Habilidades" data-en="Skills">Habilidades</a>
+              <a href="#projects" onclick="handleNavClick()" data-pt="Projetos" data-en="Projects">Projetos</a>
+              <a href="#contact" onclick="handleNavClick()" data-pt="Contato" data-en="Contact">Contato</a>
+            <div class="social-links">
+              <a href="https://github.com/Pessinaaa" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/pedro-pessina/" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="linkedin"></i>
+              </a>
+            </div>
+            <button class="lang-toggle" onclick="toggleLanguage()">
+              <span data-en="PT" data-pt="EN">EN</span>
+            </button>
+          </nav>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1><span data-pt="Olá, eu sou " data-en="Hi, i'm ">Olá, eu sou </span><span class="accent">Pedro Pessina</span></h1>
+              <p data-pt="Um desenvolvedor full-stack em início de carreira, fascinado por resolver problemas através de código. Com maior expertise em back-end em Java, busco criar soluções que otimizem e facilitem o trabalho do dia a dia." data-en="A full-stack developer at the beginning of his career, fascinated by solving problems through code. With greater expertise in Java back-end, I seek to create solutions that optimize and facilitate day-to-day work.">Um desenvolvedor full-stack em início de carreira, fascinado por resolver problemas através de código. Com maior expertise em back-end em Java, busco criar soluções que otimizem e facilitem o trabalho do dia a dia.</p>
+              <div class="hero-buttons">
+                <a href="#projects" class="button primary">
+                  <span data-pt="Veja meu trabalho" data-en="View my work">Veja meu trabalho</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+                <a href="#contact" class="button secondary" data-pt="Entre em contato" data-en="Contact me">Entre em contato</a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img src="./media/pedro.jpeg" 
+                   alt="Foto de perfil">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <h2 data-pt="Sobre mim" data-en="About">Sobre mim</h2>
+          <div class="about-cards">
+            <div class="card">
+              <i data-lucide="code-2"></i>
+              <h3>Clean Code</h3>
+              <p data-pt="Escrevo códigos limpos e sustentáveis, seguindo as melhores práticas e padrões do mercado." data-en="I write clean and maintainable code following best practices and industry standards.">Escrevo códigos limpos e sustentáveis, seguindo as melhores práticas e padrões do mercado.</p>
+            </div>
+            <div class="card">
+              <i data-lucide="origami"></i>
+              <h3 data-pt="Adaptabilidade" data-en="Adaptability">Adaptabilidade</h3>
+              <p data-pt="Facilidade em aprender novas tecnologias e se adaptar às mudanças rápidas no ambiente de trabalho." data-en="Ease in learning new technologies and adapting to rapid changes in the work environment.">Facilidade em aprender novas tecnologias e se adaptar às mudanças rápidas no ambiente de trabalho.</p>
+            </div>
+            <div class="card">
+              <i data-lucide="bug-off"></i>
+              <h3 data-pt="Resolução de problemas" data-en="Troubleshooting">Resolução de problemas</h3>
+              <p data-pt="Gosto de enfrentar problemas complexos e encontrar soluções eficientes." data-en="I like to face complex problems and find efficient solutions.">Gosto de enfrentar problemas complexos e encontrar soluções eficientes.</p>
+            </div>
+            <div class="card">
+              <i data-lucide="alarm-clock"></i>
+              <h3 data-pt="Gestão de tempo" data-en="Time management">Gestão de tempo</h3>
+              <p data-pt="Organização e priorização de tarefas para cumprir prazos com qualidade." data-en="Organization and prioritization of tasks to meet deadlines with quality.">Organização e priorização de tarefas para cumprir prazos com qualidade.</p>
+            </div>
+            <div class="card">
+              <i data-lucide="biceps-flexed"></i>
+              <h3 data-pt="Trabalho em equipe" data-en="Teamwork">Trabalho em equipe</h3>
+              <p data-pt="Habilidade de colaborar com outros desenvolvedores e equipes multidisciplinares." data-en="Ability to collaborate with other developers and multidisciplinary teams.">Habilidade de colaborar com outros desenvolvedores e equipes multidisciplinares.</p>
+            </div>
+            <div class="card">
+              <i data-lucide="library-big"></i>
+              <h3 data-pt="Constante desenvolvimento" data-en="Personal improvement">Constante desenvolvimento</h3>
+              <p data-pt="Entusiasta em explorar novas tecnologias e aprimorar habilidades para oferecer sempre o melhor resultado." data-en="Enthusiastic about exploring new technologies and improving skills to always offer the best results.">Entusiasta em explorar novas tecnologias e aprimorar habilidades para oferecer sempre o melhor resultado.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 data-pt="Habilidades" data-en="Skills">Habilidades</h2>
+          <div class="skills-content">
+            <div class="skill">
+              <div class="skill-header">
+                <span>Java</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Thymeleaf</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Spring Boot</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Python</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>JavaScript</span>
+                <span>65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Node.js</span>
+                <span>65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>HTML + CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>React</span>
+                <span>60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 data-pt="Projetos" data-en="Projects">Projetos</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <img src="./media/siga-2.0.png" 
+                   alt="SIGA 2.0">
+              <div class="project-content">
+                <h3>SIGA 2.0</h3>
+                <p data-pt="Projeto de validação do primeiro semestre da graduação em Desenvolvimento de Software Multiplataforma. Consiste em um novo site com diversas melhorias para o SIGA (Sistema de Gestão Acadêmica)." data-en="Validation project for the first semester of the undergraduate course in Multiplatform Software Development. It consists of a new website with several improvements for SIGA (Academic Management System).">Projeto de validação do primeiro semestre da graduação em Desenvolvimento de Software Multiplataforma. Consiste em um novo site com diversas melhorias para o SIGA (Sistema de Gestão Acadêmica).</p>
+                <div class="project-links">
+                  <a href="https://github.com/AtividadesAcademicas/Siga-2.0" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="github"></i>
+                    <span data-pt="Repositório" data-en="Repository">Repositório</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./media/nes.png" 
+                   alt="New Education System">
+              <div class="project-content">
+                <h3>NES - New Education System</h3>
+                <p data-pt="Projeto de validação do segundo semestre da graduação, é um sistema de gestão acadêmica para substituir o SIGA. O NES é uma continuação do SIGA 2.0." data-en="Validation project for the second semester of the undergraduate course, it is an academic management system to replace SIGA. NES is a continuation of SIGA 2.0.">Projeto de validação do segundo semestre da graduação, é um sistema de gestão acadêmica para substituir o SIGA. O NES é uma continuação do SIGA 2.0.</p>
+                <div class="project-links">
+                  <a href="https://github.com/NewEducationSystem/New-Education-System" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="github"></i>
+                    <span data-pt="Repositório" data-en="Repository">Repositório</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./media/savpets.png" 
+                   alt="SavPets">
+              <div class="project-content">
+                <h3>SavPets</h3>
+                <p data-pt="Projeto de validação do terceiro e do quinto semestre da graduação, é um sistema de gestão interna para uma ong de acolhimento, cuidado e adoção de animais sem lar. No quinto semestre foi desenvolvido um aplicativo mobile para o sistema." data-en="Validation project for the third and fifth semesters of the undergraduate course, it is an internal management system for an ngo that welcomes, cares for and adopts homeless animals. In the fifth semester, a mobile application was developed for the system.">Projeto de validação do terceiro e do quinto semestre da graduação, é um sistema de gestão interna para uma ong de acolhimento, cuidado e adoção de animais sem lar. No quinto semestre foi desenvolvido um aplicativo mobile para o sistema.</p>
+                <div class="project-links">
+                  <a href="https://github.com/orgs/SavPets/repositories" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="github"></i>
+                    <span data-pt="Repositório" data-en="Repository">Repositório</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./media/bibliotroca.png" 
+                   alt="BiblioTroca">
+              <div class="project-content">
+                <h3>BiblioTroca</h3>
+                <p data-pt="Projeto de validação do quarto semestre da graduação, é um sistema que incentiva a leitura, facilitando a troca de livros acadêmicos ou a sua aquisição por pessoas sem condições financeiras, através de incentivos do sistema." data-en="Validation project for the fourth semester of undergraduate studies, it is a system that encourages reading, facilitating the exchange of academic books or their acquisition by people without financial means, through incentives from the system.">Projeto de validação do quarto semestre da graduação, é um sistema que incentiva a leitura, facilitando a troca de livros acadêmicos ou a sua aquisição por pessoas sem condições financeiras, através de incentivos do sistema.</p>
+                <div class="project-links">
+                  <a href="https://github.com/orgs/BiblioTroca/repositories" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="github"></i>
+                    <span data-pt="Repositório" data-en="Repository">Repositório</span>
+                  </a>
+                  <a href="https://bibliotroca.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="external-link"></i>
+                    <span data-pt="Confira o projeto" data-en="Check out the project">Confira o projeto</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./media/connecta.png" 
+                   alt="Connecta">
+              <div class="project-content">
+                <h3>Connecta</h3>
+                <p data-pt="Projeto de validação do sexto semestre da graduação, é um sistema que conecta donatários e doadores, facilitando a doação de alimentos, itens de higiene, roupas, entre outros.Possui funções de gestão interna e validações de donatários." data-en="Validation project for the sixth semester of the undergraduate course, it is a system that connects donors and recipients, facilitating the donation of food, hygiene items, clothing, among others. It has internal management functions and donor validations.">Projeto de validação do sexto semestre da graduação, é um sistema que conecta donatários e doadores, facilitando a doação de alimentos, itens de higiene, roupas, entre outros.Possui funções de gestão interna e validações de donatários.</p>
+                <div class="project-links">
+                  <a href="https://github.com/orgs/C-onnecta/repositories" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="github"></i>
+                    <span data-pt="Repositório" data-en="Repository">Repositório</span>
+                  </a>
+                  <a href="https://connecta-test.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="external-link"></i>
+                    <span data-pt="Confira o projeto" data-en="Check out the project">Confira o projeto</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./media/vitoria-flores.png" 
+                   alt="Site da Vitória Flores">
+              <div class="project-content">
+                <h3 data-pt="Site da Vitória Flores" data-en="Vitória Flores website">Site da Vitória Flores</h3>
+                <p data-pt="Site criado para divulgação da floricultura Vitória Flores, que conta com uma galeria de fotos de trabalhos realizados." data-en="Website created to promote the Vitória Flores flower shop, which features a photo gallery of completed work.">Site criado para divulgação da floricultura Vitória Flores, que conta com uma galeria de fotos de trabalhos realizados.</p>
+                <div class="project-links">
+                  <a href="https://vitoriaflores.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="external-link"></i>
+                    <span data-pt="Acesse o site" data-en="Visit the website">Acesse o site</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 data-pt="Entre em contato" data-en="Get in touch">Entre em contato</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i data-lucide="mail"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>pedro.pessina99@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i data-lucide="phone"></i>
+                <div>
+                  <h3 data-pt="Telefone" data-en="Phone">Telefone</h3>
+                  <p>+55 (11) 98969-7450</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <h3 data-pt="Localização" data-en="Location">Localização</h3>
+                  <p data-pt="São Paulo, SP - Brasil" data-en="São Paulo, SP - Brazil">São Paulo, SP - Brasil</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-info">
+              <h3>Pedro Pessina</h3>
+              <p data-pt="Criando soluções inovadoras através da programação" data-en="Creating innovative solutions through programming">Criando soluções inovadoras através da programação</p>
+            </div>
+            <div class="footer-social">
+              <a href="https://github.com/Pessinaaa" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/pedro-pessina/" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="mailto:pedro.pessina99@gmail.com">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Pedro Berveglieri Pessina. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+          </div>
+        </div>
+      </footer>
+      <script>
+        lucide.createIcons();
+
+        let currentLang = 'pt';
+        function toggleLanguage() {
+          currentLang = currentLang === 'pt' ? 'en' : 'pt';
+          document.documentElement.lang = currentLang;
+          const elements = document.querySelectorAll('[data-en][data-pt]');
+          elements.forEach(element => {
+            element.textContent = element.getAttribute(`data-${currentLang}`);
+          });
+        }
+
+        function toggleMenu() {
+          const menu = document.getElementById('mobileMenu');
+          menu.classList.toggle('active');
+          const icon = document.querySelector('.menu-button i');
+          icon.dataset.lucide = menu.classList.contains('active') ? 'x' : 'menu';
+          lucide.createIcons();
+        }
+
+        function handleNavClick() {
+          const menu = document.getElementById('mobileMenu');
+          menu.classList.remove('active');
+          const icon = document.querySelector('.menu-button i');
+          icon.dataset.lucide = 'menu';
+          lucide.createIcons();
+        }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+</body>
+</html>
