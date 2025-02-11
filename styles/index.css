@@ -298,20 +298,23 @@
     justify-content: space-between;
     font-weight: 500;
     margin-bottom: 0.5rem;
+    align-items: center;
   }
   
-  .skill-bar {
-    height: 0.5rem;
-    background: var(--gray-200);
-    border-radius: 9999px;
-    overflow: hidden;
+  .stars {
+    display: flex;
+    gap: 0.25rem;
   }
   
-  .skill-progress {
-    height: 100%;
-    background: var(--primary);
-    border-radius: 9999px;
-    transition: width 1s ease-out;
+  .star {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--gray-300);
+  }
+  
+  .star.filled {
+    color: var(--primary);
+    fill: currentColor;
   }
   
   .projects {
