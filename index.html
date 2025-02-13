@@ -43,7 +43,7 @@
                 <img src="./media/brazil-.png" alt="Alterar para português" class="flag flag-pt">
               </button>
               <button class="menu-button" onclick="toggleMenu()">
-                <i data-lucide="menu"></i>
+                <i id="menuIcon" data-lucide="menu"></i>
               </button>
             </div>
           </div>
@@ -431,7 +431,6 @@
               flag.style.display = 'block';
             }
           });
-          handleNavClick();
         }
 
         document.querySelectorAll('.flag-pt').forEach(flag => {
@@ -441,16 +440,16 @@
         function toggleMenu() {
           const menu = document.getElementById('mobileMenu');
           menu.classList.toggle('active');
-          const icon = document.querySelector('.menu-button i');
-          icon.dataset.lucide = menu.classList.contains('active') ? 'x' : 'menu';
+          const icon = document.getElementById('menuIcon');
+          menuIcon.setAttribute('data-lucide', menu.classList.contains('active') ? 'x' : 'menu');
           lucide.createIcons();
         }
 
         function handleNavClick() {
           const menu = document.getElementById('mobileMenu');
           menu.classList.remove('active');
-          const icon = document.querySelector('.menu-button i');
-          icon.dataset.lucide = 'menu';
+          const icon = document.getElementById('menuIcon');
+          menuIcon.setAttribute('data-lucide', 'menu');
           lucide.createIcons();
         }
 
