@@ -31,12 +31,21 @@
                 </a>
               </div>
               <button class="lang-toggle" onclick="toggleLanguage()">
-                <span data-en="PT" data-pt="EN">EN</span>
+                <!--Brazil and USA icons created by Freepik - Flaticon-->
+                <img src="./media/united-states.png" alt="Change to english" class="flag flag-en">
+                <img src="./media/brazil-.png" alt="Alterar para português" class="flag flag-pt">
               </button>
             </nav>
-            <button class="menu-button" onclick="toggleMenu()">
-              <i data-lucide="menu"></i>
-            </button>
+            <div class="mobile-actions">
+              <button class="lang-toggle" onclick="toggleLanguage()">
+                <!--Brazil and USA icons created by Freepik - Flaticon-->
+                <img src="./media/united-states.png" alt="Change to english" class="flag flag-en">
+                <img src="./media/brazil-.png" alt="Alterar para português" class="flag flag-pt">
+              </button>
+              <button class="menu-button" onclick="toggleMenu()">
+                <i data-lucide="menu"></i>
+              </button>
+            </div>
           </div>
           <nav class="nav-mobile" id="mobileMenu">
             <a href="#about" onclick="handleNavClick()" data-pt="Sobre mim" data-en="About">Sobre mim</a>
@@ -51,9 +60,6 @@
                 <i data-lucide="linkedin"></i>
               </a>
             </div>
-            <button class="lang-toggle" onclick="toggleLanguage()">
-              <span data-en="PT" data-pt="EN">EN</span>
-            </button>
           </nav>
         </div>
       </header>
@@ -418,8 +424,19 @@
           elements.forEach(element => {
             element.textContent = element.getAttribute(`data-${currentLang}`);
           });
+          document.querySelectorAll('.flag').forEach(flag => {
+            if (flag.classList.contains(`flag-${currentLang}`)) {
+              flag.style.display = 'none';
+            } else {
+              flag.style.display = 'block';
+            }
+          });
           handleNavClick();
         }
+
+        document.querySelectorAll('.flag-pt').forEach(flag => {
+          flag.style.display = 'none';
+        });
 
         function toggleMenu() {
           const menu = document.getElementById('mobileMenu');
